@@ -1,0 +1,33 @@
+﻿<div class="row">
+
+    
+        @foreach(var item in Model)
+{
+    <div class="col-sm-4">   
+
+        <div class="card">
+  <img src="~/@item.Images">
+  <div class="container">
+  <div>@item.Itemid</div>
+   <div>@item.Itemname</div>
+   <div>@item.Price</div>
+   <div>@item.Itemdesc</div>
+  </div>         
+  </div>
+   </div>
+  }
+         
+    
+    </div>
+
+
+
+
+
+
+    <div>
+        Total Price @ViewData["total"]
+    </div>
+
+    @ViewData["a"]
+    
